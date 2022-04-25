@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:fontFamily="@font/soria"
+        android:text="Total Wage Received:"
+        android:textColor="#BA2859"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TWRresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="0"
+        android:textColor="#059300"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="Total Regular Wage:"
+        android:textColor="#BA2859"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/TWRresult"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/TWRresult"
+        app:layout_constraintTop_toBottomOf="@+id/TWRresult" />
+
+    <TextView
+        android:id="@+id/TRWresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="0"
+        android:textColor="#059300"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="Hours Rendered:"
+        android:textColor="#BA2859"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/TRWresult"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/TRWresult"
+        app:layout_constraintTop_toBottomOf="@+id/TRWresult" />
+
+    <TextView
+        android:id="@+id/HRresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="0"
+        android:textColor="#059300"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="@font/soria"
+        android:text="Back"
+        app:backgroundTint="#BA2859"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/employeename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/soria"
+        android:text="Name here"
+        android:textColor="#D887A2"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/employeetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/soria"
+        android:text="Employee Type"
+        android:textColor="#A3526D"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/employeename"
+        app:layout_constraintStart_toStartOf="@+id/employeename"
+        app:layout_constraintTop_toBottomOf="@+id/employeename" />
+</androidx.constraintlayout.widget.ConstraintLayout>
