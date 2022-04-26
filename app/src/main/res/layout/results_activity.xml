@@ -68,10 +68,9 @@
         android:text="Hours Rendered:"
         android:textColor="#BA2859"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/TRWresult"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@+id/TRWresult"
-        app:layout_constraintTop_toBottomOf="@+id/TRWresult" />
+        app:layout_constraintEnd_toEndOf="@+id/OTresult"
+        app:layout_constraintStart_toStartOf="@+id/OTresult"
+        app:layout_constraintTop_toBottomOf="@+id/OTresult" />
 
     <TextView
         android:id="@+id/HRresult"
@@ -91,12 +90,13 @@
         android:id="@+id/btnback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="56dp"
         android:fontFamily="@font/soria"
         android:text="Back"
         app:backgroundTint="#BA2859"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -124,4 +124,31 @@
         app:layout_constraintEnd_toEndOf="@+id/employeename"
         app:layout_constraintStart_toStartOf="@+id/employeename"
         app:layout_constraintTop_toBottomOf="@+id/employeename" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="Total OT Wage:"
+        android:textColor="#BA2859"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/TRWresult"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/TRWresult"
+        app:layout_constraintTop_toBottomOf="@+id/TRWresult" />
+
+    <TextView
+        android:id="@+id/OTresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soria"
+        android:text="0"
+        android:textColor="#059300"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

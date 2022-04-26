@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/soria"
-        android:text="Hours worked (1-8 Hours):"
+        android:text="Hours worked (Include Overtime if available):"
         android:textColor="#BA2859"
         app:layout_constraintEnd_toEndOf="@+id/employeeType"
         app:layout_constraintHorizontal_bias="0.454"
