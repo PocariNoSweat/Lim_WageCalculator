@@ -53,7 +53,7 @@ public class ResultsActivity extends AppCompatActivity implements View.OnClickLi
 
         switch (employeeType) {
             case "Regular Employee":
-                if (employeeHours > 8.0) {
+                if (employeeHours > 8.0) { //If employee hours is more than 8 hours
                     employeeHours = employeeHours - 8;
                     totalWage = (employeeHours * 115) + 800;
                     totalOTWage = employeeHours * 115;
@@ -61,14 +61,14 @@ public class ResultsActivity extends AppCompatActivity implements View.OnClickLi
                     txtTotalWage.setText("₱" + totalWage);
                     txtRegularWage.setText("₱800");
                     txtOTWage.setText("₱" + totalOTWage);
-                } else {
+                } else { //If employee hours is less than or equal to 8 hours
                     totalWage = employeeHours * 100;
                     txtTotalWage.setText("₱" + totalWage);
                     txtRegularWage.setText("₱" + totalWage);
                 }
                 break;
             case "Part-Time Worker":
-                if (employeeHours > 8.0) {
+                if (employeeHours > 8.0) { //If employee hours is more than 8 hours
                     employeeHours = employeeHours - 8;
                     totalWage = (employeeHours * 90) + 600;
                     totalOTWage = employeeHours * 90;
@@ -76,14 +76,14 @@ public class ResultsActivity extends AppCompatActivity implements View.OnClickLi
                     txtTotalWage.setText("₱" + totalWage);
                     txtRegularWage.setText("₱600");
                     txtOTWage.setText("₱" + totalOTWage);
-                } else {
+                } else { //If employee hours is less than or equal to 8 hours
                     totalWage = employeeHours * 75;
                     txtTotalWage.setText("₱" + totalWage);
                     txtRegularWage.setText("₱" + totalWage);
                 }
                 break;
             case "Probationary Employee":
-                if (employeeHours > 8.0) {
+                if (employeeHours > 8.0) { //If employee hours is more than 8 hours
                     employeeHours = employeeHours - 8;
                     totalWage = (employeeHours * 100) + 720;
                     totalOTWage = employeeHours * 100;
@@ -91,7 +91,7 @@ public class ResultsActivity extends AppCompatActivity implements View.OnClickLi
                     txtTotalWage.setText("₱" + totalWage);
                     txtRegularWage.setText("₱720");
                     txtOTWage.setText("₱" + totalOTWage);
-                } else {
+                } else { //If employee hours is less than or equal to 8 hours
                     totalWage = employeeHours * 90;
                     txtTotalWage.setText("₱" + totalWage);
                     txtRegularWage.setText("₱" + totalWage);
@@ -101,7 +101,7 @@ public class ResultsActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     public void onClick(View v) {
-        if (v.getId() == R.id.btnback) {
+        if (v.getId() == R.id.btnback) { //Return To Main Activity
             startActivity(new Intent(ResultsActivity.this, MainActivity.class));
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }
